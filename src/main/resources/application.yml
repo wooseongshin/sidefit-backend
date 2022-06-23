@@ -1,0 +1,19 @@
+spring:
+  datasource:
+#    url: jdbc:mariadb://localhost:3307/sidefit # local
+    url: jdbc:mariadb://sidefit-rds.cish6ckb5r5h.ap-northeast-2.rds.amazonaws.com:3306/sidefit # aws
+    username: sidefit
+    password: sidefitdb
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+
+logging.level:
+  org.hibernate.SQL: debug
+#  org.hibernate.type: trace
