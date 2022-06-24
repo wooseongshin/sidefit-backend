@@ -1,6 +1,5 @@
-# logging-deploy.yml
 
-name: logging-system
+name: build-system
 
 on:
   workflow_dispatch:
