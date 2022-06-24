@@ -7,10 +7,10 @@ TARGET_PORT=0
 echo "> Nginx currently proxies to ${CURRENT_PORT}."
 
 # Toggle port number
-if [ ${CURRENT_PORT} -eq 8083 ]; then
-    TARGET_PORT=8084
-elif [ ${CURRENT_PORT} -eq 8084 ]; then
-    TARGET_PORT=8083
+if [ ${CURRENT_PORT} -eq 8081 ]; then
+    TARGET_PORT=8082
+elif [ ${CURRENT_PORT} -eq 8082 ]; then
+    TARGET_PORT=8081
 else
     echo "> No WAS is connected to nginx"
     exit 1
