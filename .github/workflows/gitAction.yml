@@ -2,7 +2,9 @@
 name: build-system
 
 on:
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 
 env:
   S3_BUCKET_NAME: sidefit-deploy
