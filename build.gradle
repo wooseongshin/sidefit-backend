@@ -28,6 +28,8 @@ dependencies {
 	// 추후 제거여부
 	implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.8'
 
+	implementation 'io.springfox:springfox-swagger2:2.9.2'
+	implementation 'io.springfox:springfox-swagger-ui:2.9.2'
 	compileOnly 'org.projectlombok:lombok'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
